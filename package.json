@@ -1,0 +1,48 @@
+{
+    "name": "d3barchart",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "d3-array": "^1.2.0",
+        "d3-axis": "^1.0.8",
+        "d3-brush": "^1.0.4",
+        "d3-geo": "^1.6.4",
+        "d3-scale": "^1.0.6",
+        "d3-selection": "^1.1.0",
+        "d3-shape": "^1.2.0",
+        "d3-svg-legend": "^2.24.1",
+        "d3-tip": "^0.7.1",
+        "d3-transition": "^1.1.0",
+        "detect-browser": "^1.10.0",
+        "gh-pages": "^1.0.0",
+        "moment": "^2.18.1",
+        "node-sass-chokidar": "^0.0.3",
+        "npm-run-all": "^4.0.2",
+        "react": "^15.6.1",
+        "react-autosuggest": "^9.3.2",
+        "react-bootstrap": "^0.31.2",
+        "react-dom": "^15.6.1",
+        "react-redux": "^5.0.6",
+        "react-select": "^1.0.0-rc.5",
+        "react-spinners": "^0.0.30",
+        "react-tabs": "^2.0.0",
+        "redux": "^3.7.2",
+        "redux-logger": "^3.0.6",
+        "redux-thunk": "^2.2.0"
+    },
+    "devDependencies": {
+        "react-scripts": "1.0.13"
+    },
+    "homepage": "https://khacquyetdang.github.io/d3scatterplot",
+    "scripts": {
+        "build-css": "node-sass-chokidar src/ -o src/",
+        "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+        "start-js": "react-scripts start",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
+        "start": "npm-run-all -p watch-css start-js",
+        "build": "npm run build-css && react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    }
+}
